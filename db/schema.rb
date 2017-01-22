@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161215213721) do
+ActiveRecord::Schema.define(version: 20170122163842) do
 
   create_table "alerts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "course_id"
@@ -369,6 +369,7 @@ ActiveRecord::Schema.define(version: 20161215213721) do
     t.boolean  "greeted",             default: false
     t.boolean  "greeter",             default: false
     t.string   "locale"
+    t.string   "chat_password"
   end
 
   create_table "versions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
